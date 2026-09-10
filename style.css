@@ -174,3 +174,12 @@ h1{text-shadow:0 0 40px rgba(85,199,255,.12)}
 section:before{content:"";display:block;width:55px;height:2px;margin-bottom:26px;background:#55c7ff;opacity:.7}
 #contact{text-align:center}
 @media(max-width:700px){.hero:after{width:150px;height:150px;right:-45px}.card{padding:24px}}
+/* 2060 MISSION SYSTEM PANEL */
+.mission-panel{position:relative;z-index:2;margin-top:42px;max-width:720px;padding:18px 20px;background:rgba(3,12,25,.72);border:1px solid rgba(85,199,255,.22);border-radius:10px;box-shadow:0 0 35px rgba(0,0,0,.25);backdrop-filter:blur(10px)}
+.mission-panel-header{display:flex;justify-content:space-between;align-items:center;padding-bottom:14px;margin-bottom:14px;border-bottom:1px solid rgba(85,199,255,.12);font-size:11px;letter-spacing:2px;font-weight:800;color:#8fa9c2}
+.online{color:#62e6a5}
+.mission-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.mission-grid div{padding:10px;border-left:1px solid rgba(85,199,255,.18)}
+.mission-grid small{display:block;color:#668098;font-size:9px;letter-spacing:1.5px;margin-bottom:5px}
+.mission-grid strong{display:block;color:#eef6ff;font-size:12px;letter-spacing:.5px}
+@media(max-width:700px){.mission-panel{margin-top:32px}.mission-grid{grid-template-columns:repeat(2,1fr)}}
