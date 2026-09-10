@@ -183,3 +183,18 @@ section:before{content:"";display:block;width:55px;height:2px;margin-bottom:26px
 .mission-grid small{display:block;color:#668098;font-size:9px;letter-spacing:1.5px;margin-bottom:5px}
 .mission-grid strong{display:block;color:#eef6ff;font-size:12px;letter-spacing:.5px}
 @media(max-width:700px){.mission-panel{margin-top:32px}.mission-grid{grid-template-columns:repeat(2,1fr)}}
+/* 2060 DEVELOPMENT DASHBOARD */
+.development-dashboard{padding:90px 7%;background:linear-gradient(180deg,#020712,#03101e)}
+.section-label{font-size:11px;letter-spacing:3px;color:#55c7ff;font-weight:800;margin-bottom:14px}
+.development-dashboard h2{font-size:clamp(28px,5vw,48px);margin:0 0 12px}
+.development-dashboard>p{max-width:720px;color:#91a7bb;line-height:1.7}
+.dev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:38px}
+.dev-card{padding:28px;background:rgba(7,19,34,.85);border:1px solid rgba(85,199,255,.15);border-radius:10px;transition:.25s}
+.dev-card:hover{transform:translateY(-4px);border-color:rgba(85,199,255,.4)}
+.dev-card h3{margin:15px 0 10px;color:#eef6ff}
+.dev-card p{color:#91a7bb;line-height:1.6}
+.dev-status{font-size:10px;letter-spacing:1.5px;font-weight:800}
+.dev-status.active{color:#62e6a5}
+.dev-status.research{color:#55c7ff}
+.dev-status.planned{color:#f0c674}
+@media(max-width:700px){.dev-grid{grid-template-columns:1fr}.development-dashboard{padding:70px 6%}}
