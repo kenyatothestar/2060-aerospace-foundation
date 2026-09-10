@@ -135,3 +135,42 @@ section{padding:75px 7%}
     grid-template-columns: 1fr;
   }
 }
+
+.contact-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 35px;
+}
+
+#contact .button {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+@media (max-width: 900px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* 2060 AEROSPACE — VISUAL IDENTITY UPGRADE */
+body{background:#020712;overflow-x:hidden}
+header{background:rgba(2,7,18,.9);backdrop-filter:blur(16px);border-bottom:1px solid rgba(85,199,255,.18)}
+.logo{font-weight:900;letter-spacing:3px}
+nav a{font-weight:600;transition:.2s}
+nav a:hover{color:#55c7ff}
+.hero{position:relative;overflow:hidden;background:radial-gradient(circle at 78% 38%,rgba(18,78,125,.75),rgba(7,20,38,.8) 28%,#020712 68%)}
+.hero:before{content:"2060";position:absolute;right:4%;top:12%;font-size:clamp(130px,25vw,360px);font-weight:900;letter-spacing:-15px;color:rgba(85,199,255,.035);pointer-events:none}
+.hero:after{content:"";position:absolute;right:10%;bottom:15%;width:220px;height:220px;border:1px solid rgba(85,199,255,.18);border-radius:50%;box-shadow:0 0 70px rgba(85,199,255,.08);pointer-events:none}
+h1{text-shadow:0 0 40px rgba(85,199,255,.12)}
+.button{box-shadow:0 0 28px rgba(85,199,255,.12);transition:.2s}
+.button:hover{transform:translateY(-2px);box-shadow:0 0 35px rgba(85,199,255,.25)}
+.card,.project{background:linear-gradient(145deg,rgba(8,21,37,.96),rgba(4,13,25,.96));border:1px solid rgba(85,199,255,.14);transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:rgba(85,199,255,.35);box-shadow:0 12px 35px rgba(0,0,0,.25)}
+section:before{content:"";display:block;width:55px;height:2px;margin-bottom:26px;background:#55c7ff;opacity:.7}
+#contact{text-align:center}
+@media(max-width:700px){.hero:after{width:150px;height:150px;right:-45px}.card{padding:24px}}
